@@ -205,4 +205,9 @@ document.querySelector('#btnCapNhatSinhVien').onclick = function () {
         console.log('xu ly that bai', error.repsonse.data);
     }
     );
+
+
+    this.kiemtraQRCode = function(){
+        console.log('Check QR Code');
+    }
 }
