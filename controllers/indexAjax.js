@@ -214,4 +214,7 @@ document.querySelector('#btnCapNhatSinhVien').onclick = function () {
     this.chucnangUserA = function(){
         console.log('user A');
     }
+    this.chucnangUserA = function(){
+        console.log('user B');
+    }
 }
