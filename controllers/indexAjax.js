@@ -210,4 +210,8 @@ document.querySelector('#btnCapNhatSinhVien').onclick = function () {
     this.kiemtraQRCode = function(){
         console.log('Check QR Code');
     }
+
+    this.chucnangUserA = function(){
+        console.log('user A');
+    }
 }
