@@ -182,21 +182,21 @@ window.chinhSua = function (maSinhVien) {
 document.querySelector('#btnCapNhatSinhVien').onclick = function () {
     var sv = new SinhVien();
     //Load lại lên control phía trên 
-    sv.maSinhVien =  document.querySelector('#maSinhVien').value;
-    sv.tenSinhVien =  document.querySelector('#tenSinhVien').value;
-    sv.loaiSinhVien =  document.querySelector('#loaiSinhVien').value;
-    sv.email =  document.querySelector('#email').value = sv.email;
-    sv.soDienThoai =  document.querySelector('#soDienThoai').value;
-    sv.diemRenLuyen =  document.querySelector('#diemRenLuyen').value;
-    sv.diemToan =  document.querySelector('#diemToan').value;
-    sv.diemLy =  document.querySelector('#diemLy').value;
-    sv.diemHoa =  document.querySelector('#diemHoa').value;
+    sv.maSinhVien = document.querySelector('#maSinhVien').value;
+    sv.tenSinhVien = document.querySelector('#tenSinhVien').value;
+    sv.loaiSinhVien = document.querySelector('#loaiSinhVien').value;
+    sv.email = document.querySelector('#email').value = sv.email;
+    sv.soDienThoai = document.querySelector('#soDienThoai').value;
+    sv.diemRenLuyen = document.querySelector('#diemRenLuyen').value;
+    sv.diemToan = document.querySelector('#diemToan').value;
+    sv.diemLy = document.querySelector('#diemLy').value;
+    sv.diemHoa = document.querySelector('#diemHoa').value;
 
     axios(
         {
             url: `http://svcy.myclass.vn/api/SinhVienApi/CapNhatThongTinSinhVien?maSinhVien=${sv.maSinhVien}`, //duong dan den file chua du lieu hoac api do backend cung cap
             method: 'PUT',//do back end cung cap  
-            data: sv      
+            data: sv
         }
     ).then(function (result) {
         renderSinhVien();
@@ -207,14 +207,15 @@ document.querySelector('#btnCapNhatSinhVien').onclick = function () {
     );
 
 
-    this.kiemtraQRCode = function(){
+    this.kiemtraQRCode = function () {
         console.log('Check QR Code');
     }
 
-    this.chucnangUserA = function(){
+    this.chucnangUserA = function () {
         console.log('user A');
     }
     this.chucnangUserA = function(){
+
         console.log('user B');
     }
 }
